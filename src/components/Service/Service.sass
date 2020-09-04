@@ -1,0 +1,106 @@
+.service
+  display: block
+  position: relative
+  padding: 100px 50px
+
+  +max($bp-xs)
+    padding: 10px
+    
+  &__logo
+    +logo
+
+  &__section
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    align-items: center
+
+  &__container
+    width: 50%
+  
+    +max($bp-md)
+      width: 100%
+
+  &__title
+    display: inline
+    font-size: 24px
+    font-weight: bold
+    color: black
+    font-family: "Verdana"
+
+    +max($bp-xs)
+      font-size: 16px
+
+  &__slash
+    display: inline
+    padding: 0px 5px
+    color: $mandarian
+    font-weight: bold
+    font-size: 24px
+
+    +max($bp-xs)
+      font-size: 16px
+  
+  &__char
+    display: inline
+    padding: 0px 15px
+    color: $grey
+    font-size: 40px
+
+    +max($bp-xs)
+      font-size: 30px
+
+  &__endTitle
+    display: inline
+    color: $grey
+    font-size: 24px
+
+    +max($bp-xs)
+      font-size: 16px
+
+  &__name
+    font-family: "Verdana"
+    font-size: 20px
+    font-weight: bold
+    padding: 40px 0px 20px 0px
+
+    +max($bp-xs)
+      font-size: 16px
+
+  &__text
+    font-size: 16px
+    padding-bottom: 50px
+
+    +max($bp-xs)
+      font-size: 14px
+
+  &__circle
+    max-width: 540px
+    max-height: 540px
+    margin-bottom: 30px
+
+  &__moreInfo
+    text-align: right
+    font-size: 22px
+    font-weight: bold
+    text-decoration: none
+    color: $black
+
+    +max($bp-xs)
+      font-size: 16px
+
+  &__more
+    font-family: "Verdana"
+    display: inline-block
+    text-decoration: underline
+  
+  &__arrow
+    display: inline-block
+    height: 22px
+    padding-left: 10px
+
+    +max($bp-xs)
+      height: 16px
+
+.-right
+  text-align: right

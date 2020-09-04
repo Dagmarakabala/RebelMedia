@@ -1,0 +1,44 @@
+.clients
+  display: block
+  position: relative
+  width: 100%
+  padding: 50px
+
+  +max($bp-xs)
+    padding: 10px
+    
+  &__logo
+    +logo
+
+  &__section
+    width: 100%
+    text-align: center
+    overflow: hidden
+
+  &__container
+    display: flex
+    flex-wrap: wrap
+    width: 90%
+    gap: 50px
+    margin: auto
+    padding-top: 100px
+    justify-content: space-between
+
+  &__inner 
+    width: calc(25% - 50px)
+    margin: 20px 0px
+
+    +max($bp-md)
+      width: calc(33.33% - 50px) 
+
+    +max($bp-sm)
+      width: calc(50% - 50px)
+
+  &__client
+    with: auto
+    height: auto
+    margin: auto
+    object-fit: contain
+    
+
+  

@@ -1,0 +1,37 @@
+.footer 
+  display: flex
+  flex-wrap: nowrap
+  gap: 20px
+  justify-context: space-between
+  align-items: center
+  background-color: $orange
+  padding: 20px
+
+  +max($bp-xs)
+    flex-wrap: wrap
+
+  &__container
+    display: flex
+    flex-wrap: nowrap
+    width: calc(60% - 20px)
+    gap: 20px
+
+    +max($bp-xs)
+      width: 100%
+      flex-wrap: wrap
+      flex-direction: column
+
+  &__text
+    font-size: 14px
+    line-height: 1.5
+
+  &__contact 
+    width: 40%
+    text-align: right
+
+    +max($bp-xs)
+      width: 100%
+      
+  &__icon
+    padding: 0px 10px
+    height: 14px
